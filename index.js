@@ -7,10 +7,20 @@ const currency = new Discord.Collection();
 
 //Version 1.2.7
 
+let statuses = [
+    `over ${client.users.size} users`,
+    `${prefix}help`,
+    `the classroom`,
+    `for rulebreakers`
+]
+
 //READY FUNCTION
-client.on('ready',()=>{
-    console.log(`Logged in as ${client.user.tag}`);
-    client.user.setActivity('for rulebreakers', {type: "WATCHING"});
+client.on("ready", () => {
+    console.log("All good to go.");
+    setInterval(() => {
+        let status = statuses[Math.floor(Math.random() * statuses.length)]
+        client.user.setActivity(status, {type: "WATCHING"});
+    }, 5000)
 });
 client.on("message", function(message) {
     if (!message.content.startsWith(`${prefix}`)) return;
