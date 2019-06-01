@@ -135,8 +135,7 @@ client.on("message", function(message) {
 
 })
 
-client.login(process.env.settings.token)
-//https://github.com/CommanderG2/WTMCBOT.git
+client.login(process.env.BOT_TOKEN)
 //https://discordapp.com/oauth2/authorize?client_id=570368777603121176&scope=bot&permissions=2146958591
 
 /*    for (x = 0; x < profanities.length; x++){
