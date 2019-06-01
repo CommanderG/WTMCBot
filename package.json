@@ -1,0 +1,21 @@
+{
+  "name": "wtmc-bot",
+  "version": "1.0.0",
+  "description": "A bot for WTMC Meme Discord Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Garrett Kissel",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "discord.js": "^11.4.2",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "moment": "^2.24.0",
+    "ms": "^2.1.1",
+    "profanities": "^2.10.2",
+    "weather.js": "^0.1.0"
+  }
+}
