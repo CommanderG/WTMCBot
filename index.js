@@ -8,7 +8,7 @@ const currency = new Discord.Collection();
 //Version 1.2.7
 
 let statuses = [
-    `over ${client.users.size} users`,
+    `over ${client.users} users`,
     `${prefix}help`,
     `the classroom`,
     `for rulebreakers`
